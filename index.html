@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Estufa Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <button onclick="showPage('simulador')">Simulador</button>
+        <button onclick="showPage('sobre-mim')">Sobre Mim</button>
+        <button onclick="showPage('sobre-agrinho')">Sobre o Agrinho</button>
+    </nav>
+
+    <main id="content">
+        <section id="simulador" class="page active">
+            <h1>Simulador de Estufa de Morango</h1>
+            <p>Ajuste os controles para manter a produção sustentável.</p>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label>Temperatura: <span id="temp-val">20</span>°C</label>
+                    <input type="range" id="temp" min="0" max="40" value="20">
+                </div>
+                <div class="control-group">
+                    <label>Umidade do Ar: <span id="umid-ar-val">60</span>%</label>
+                    <input type="range" id="umid-ar" min="0" max="100" value="60">
+                </div>
+                <div class="control-group">
+                    <label>Umidade do Solo: <span id="umid-solo-val">50</span>%</label>
+                    <input type="range" id="umid-solo" min="0" max="100" value="50">
+                </div>
+            </div>
+
+            <div id="status-box">
+                <h3>Status da Plantação:</h3>
+                <p id="feedback">Condições Ideais</p>
+            </div>
+        </section>
+
+        <section id="sobre-mim" class="page">
+            <h1>Sobre Mim</h1>
+            <p>Olá! Sou aluno do 1º ano do Ensino Médio e este projeto visa aplicar tecnologia no campo para um futuro mais sustentável.</p>
+        </section>
+
+        <section id="sobre-agrinho" class="page">
+            <h1>Sobre o Concurso Agrinho 2026</h1>
+            <p>Tema: "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente".</p>
+            <div class="img-placeholder">
+                <img src="https://via.placeholder.com/300x150?text=Logo+Agrinho+2026" alt="Logo Agrinho">
+                <p><em>(Substitua o link acima pela imagem oficial do concurso)</em></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
